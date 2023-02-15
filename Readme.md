@@ -1,2 +1,2 @@
-## > JavaScript The Recent Parts
-### * [Templete String](./Md/String.md)
+> ## JavaScript The Recent Parts
+* ###  [String](./Md/String.md)
