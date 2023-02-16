@@ -20,5 +20,5 @@ const firstEmail = first.email !== undefined ? first.email : 'kyle@gmail.com';
 console.log(firstEmail)
 
 ```
-## For More Information
+## For More Information Click Below:-
 [Array Destructuring](../Js/Array%20Destructuring/)
