@@ -4,6 +4,7 @@ function assign_dest() {
 
 let firstVal,SecondVal;
 
+let tmp3;
 ({
     a : firstVal,
     b : SecondVal,

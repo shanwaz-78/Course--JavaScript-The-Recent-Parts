@@ -16,3 +16,4 @@ let tmp;
 
 console.log(a + c + d)
 console.log(tmp)
+console.log(d)
