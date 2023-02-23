@@ -27,6 +27,4 @@ try {
 //     const prs = files.map(getfile);
 
 //     prs.forEach(function tmp(pr) {
-//         console.log(await pr) // it's gonna be give us an error because we cannot write await inside of regular function ;
-//     })
-// }
+//   console.log(await pr) // it's gonna be give us an error because we cannot write await inside of regular function ;
