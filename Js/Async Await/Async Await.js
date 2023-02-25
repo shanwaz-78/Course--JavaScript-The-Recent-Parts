@@ -16,6 +16,30 @@ async function fetchData() {
 }
 console.log('This is 1st msg');
 fetchData()
+//  try {
+//     async function fetchJsonData() {
+//         console.log('This is 1st msg');
+//         await fetch('https://jsonplaceholder.typicode.com/users',{
+//             method : 'POST',
+//             body : JSON.stringify({
+//                 Name : 'Kyle',
+//                 Age : 23,
+//                 Desgination : 'Developer',
+//             }),
+//             headers : {
+//                 'Content-type' : 'application/json'
+//             }
+//         })
+//         .then((result => result.json()))
+//         .then((result2 => console.log(result2)))
+        
+//     }
+//         console.log('This is 2nd msg');
+//         fetchJsonData();
+//         console.log('This is 3rd msg');
+// } catch (error) {
+//     console.log('Error is occured')
+// }
 
 //  try {
 //     async function fetchJsonData() {
