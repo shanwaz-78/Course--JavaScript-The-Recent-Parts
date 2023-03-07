@@ -7,3 +7,4 @@
 * ### [Iterators & Generators](./Js/Iterators%20%26%20generators/)
 * ### [Regular Expressions](./Js/Regular%20Expressions/)
 * ### [Async Await](./Js/Async%20Await/)
+* ### [Prototype](./Js/Prototype/)
