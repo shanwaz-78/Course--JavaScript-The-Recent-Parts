@@ -47,3 +47,11 @@ console.log(obj.name) // First it will find name on obj it couldn't find it it w
 // }
 // const obj3 = new eachElement('Kyle');
 // console.log(obj3);
+
+function myForEach(callback) {
+    let newArr = []
+    for(let i = 0; i < this.length; i++){
+       newArr.push(callback(this[i]))
+    }
+}
+Array.prototype.myForEach = myForEach;
