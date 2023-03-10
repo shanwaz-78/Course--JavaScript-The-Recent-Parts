@@ -1,3 +1,5 @@
+// Templete strings is new feature of js and came in Es6 it also known as string interpolation we use it with backtick and it more helps us to write complex string (String concatenation or combine smaller strings);
+
 const name = 'Anderson';
 const Email = 'ander7@gmail.com';
 
