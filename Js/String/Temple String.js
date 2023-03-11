@@ -13,3 +13,12 @@ console.log(`The name is ${name} for contact ${Email}`)
 // we say template but it's not template, its already a string
 
 //to know easy simple it is an example like IIFE . and IIFE works when we involed. so same thing  happens with string it is immediately goes and construct.
+
+    // Destructurng with function;
+function myFunction([first,second,,,third]) {
+    console.log(first)
+    console.log(second)
+    console.log(third)
+}
+
+myFunction([1,2,3,4,5])

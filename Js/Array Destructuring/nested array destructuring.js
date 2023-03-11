@@ -11,3 +11,42 @@ const [
 ] = arr;
 
 console.log(num4) // 4
+
+// Object Parameters;
+function objPara({firstName,lastName}) {
+    console.log(`Hello,${firstName} ${lastName}`);
+}
+
+objPara({firstName : 'john',lastName : 'byro'})
+
+// object destructuring wiht assign seprate variables name not same;
+const obj = {
+    firstName : 'John',
+    lastName : 'Byro',
+};
+
+const {
+    firstName : first,
+    lastName : last
+} = obj
+console.log(last)
+
+// Nested Object Destructuring along assign to seprate variable name;
+
+const obj3 = {
+    userName : 'Kyle',
+    userAge : 27,
+    nest : {
+        userDesignation : undefined,
+    },
+};
+
+const {
+    userName : user,
+    userAge : user2,
+    nest : {
+        userDesignation : designation = 'Developer',
+    },
+} = obj3;
+
+console.log(designation)
