@@ -19,3 +19,16 @@ const obj = {a : 1, b : 2, c: 3};
 //     c : second, // Positions does not matter in an object the matter is source. But in an array positions are matter but not source.
 //     b : third,
 // } = tmp = obj;
+
+
+const obj2 = {
+    Name : 'Kyle',
+    Designation : 'Developer',
+};
+
+({ // That's called overloading of curly braces;
+    Name : userName,
+    Designation : Deed
+} = obj2)
+
+console.log(Deed)

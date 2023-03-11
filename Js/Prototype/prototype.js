@@ -1,4 +1,4 @@
-// It's Called Protoyple Inheritance;
+// It's Called Protoyple chaining;
 
 const obj = {
     designation : 'Developer',
