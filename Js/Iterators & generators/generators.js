@@ -1,3 +1,5 @@
+// Generators is a special funtion which is generate values on the fly;
+
 function* gen() {
     yield 1;
     yield 2; // yield allows generators to generate values;
@@ -21,3 +23,21 @@ const obj = {
     }
 };
 console.log(obj)
+
+function* gen2() {
+    let incre = 1;
+    while (true) {
+        yield incre++
+    }
+
+}
+const val = gen2();
+console.log(val.next().value)
+console.log(val.next().value)
+console.log(val.next().value)
+console.log(val.next().value)
+console.log(val.next().value)
+console.log(val.next().value)
+console.log(val.next().value)
+console.log(val.next().value)
+console.log(val.next().value)

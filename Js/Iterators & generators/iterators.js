@@ -1,5 +1,5 @@
 // In iterators we use next() function to return the values and it's doesn't go back;
- 
+// Iterators is an object that provide sequance of values we use it to perform iteration on collections of data;
 // we cannot use iterators on an obj
 const arr = [1,2,3];
 

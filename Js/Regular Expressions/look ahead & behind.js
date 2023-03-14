@@ -22,5 +22,5 @@ console.log(str.match(regExp5));
 const msg = "The quick brown for jumps over the lazy dog";
 const regExp6 = /brown.*over/s;
 console.log(msg.match(regExp6));
-const regExp7 = /(?<=u)(i.)/g
-console.log(msg.match(regExp7))
+const regExp7 = /(?<=u)(i.)/g;
+console.log(msg.match(regExp7));
