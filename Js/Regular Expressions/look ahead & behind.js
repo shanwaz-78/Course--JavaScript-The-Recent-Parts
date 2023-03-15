@@ -24,3 +24,4 @@ const regExp6 = /brown.*over/s;
 console.log(msg.match(regExp6));
 const regExp7 = /(?<=u)(i.)/g;
 console.log(msg.match(regExp7));
+console.log('\n')
