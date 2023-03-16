@@ -1,21 +1,21 @@
 // It's Called Protoyple chaining;
 
 const obj = {
-    designation : 'Developer',
-    salary : 70000,
+  designation: "Developer",
+  salary: 70000,
 };
 
 const obj2 = {
-    student : 'Shanwaz',
+  student: "Shanwaz",
 };
 
 obj.__proto__ = obj2;
 
 obj2.__proto__ = {
-    name : 'kyle'
-}
+  name: "kyle",
+};
 
-console.log(obj.name) // First it will find name on obj it couldn't find it it will go to prototype of obj and fnd on that it again it couldn't find them then he will find on obj2 prototype;
+console.log(obj.name); // First it will find name on obj it couldn't find it it will go to prototype of obj and fnd on that it again it couldn't find them then he will find on obj2 prototype;
 
 // function myForEach(callback) {
 //     const newArr = []
@@ -48,10 +48,14 @@ console.log(obj.name) // First it will find name on obj it couldn't find it it w
 // const obj3 = new eachElement('Kyle');
 // console.log(obj3);
 
-function myForEach(callback) {
-    let newArr = []
-    for(let i = 0; i < this.length; i++){
-       newArr.push(callback(this[i]))
-    }
+function customMap(callback) {
+  let newArr = [];
+  for (let i = 0; i < this.length; i++) {
+    newArr.push(callback(this[i]));
+  }
 }
-Array.prototype.myForEach = myForEach;
+Array.prototype.customMap = customMap;
+
+const arr = [1, [[2],[[3]]]];
+const val = arr.flat(Infinity);
+console.log(val)

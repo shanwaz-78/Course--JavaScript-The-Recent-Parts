@@ -20,7 +20,7 @@ const regExp5 = /(?<=e)(l.)/g; // it will find from hello and he will find l whe
 console.log(str.match(regExp5));
 
 const msg = "The quick brown for jumps over the lazy dog";
-const regExp6 = /brown.*over/s;
+const regExp6 = /for/g
 console.log(msg.match(regExp6));
 const regExp7 = /(?<=u)(i.)/g;
 console.log(msg.match(regExp7));
