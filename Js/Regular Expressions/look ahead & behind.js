@@ -20,8 +20,32 @@ const regExp5 = /(?<=e)(l.)/g; // it will find from hello and he will find l whe
 console.log(str.match(regExp5));
 
 const msg = "The quick brown for jumps over the lazy dog";
-const regExp6 = /for/g
+const regExp6 = /for/g;
 console.log(msg.match(regExp6));
 const regExp7 = /(?<=u)(i.)/g;
 console.log(msg.match(regExp7));
-console.log('\n')
+
+// Insert data on server using fetch();
+fetch('https://jsonplaceholder.typicode.com/users',{
+    method : 'POST',
+    body : JSON.stringify({
+        name : 'Shnwaz',
+        Age : 19,
+        Designation : 'Developer',
+    }),
+    headers : {
+        'Content-type' : 'application/json',
+    },
+})
+.then(response5 => response5.json())
+.then(result5 => console.log(result5))
+
+// AJAX
+const xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function () {
+    if(this.readyState == 4 && this.status == 200)
+    return this.response
+}
+
+xhttp.open('GET','../Array Destructuring/Comma Sepration.js',true);
+xhttp.send()
