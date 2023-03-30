@@ -56,32 +56,41 @@ function customMap(callback) {
 }
 Array.prototype.customMap = customMap;
 
-const arr = [1, [[2],[[3]]]];
+const arr = [1, [[2], [[3]]]];
 const val = arr.flat(Infinity);
-console.log(val)
+console.log(val);
 
 // Insert data on server using fetch();
-fetch('https://jsonplaceholder.typicode.com/users',{
-    method : 'POST',
-    body : JSON.stringify({
-        name : 'Shnwaz',
-        Age : 19,
-        Designation : 'Developer',
-    }),
-    headers : {
-        'Content-type' : 'application/json',
-    },
+fetch("https://jsonplaceholder.typicode.com/users", {
+  method: "POST",
+  body: JSON.stringify({
+    name: "Shnwaz",
+    Age: 19,
+    Designation: "Developer",
+  }),
+  headers: {
+    "Content-type": "application/json",
+  },
 })
-.then(response5 => response5.json())
-.then(result5 => console.log(result5))
+  .then((response5) => response5.json())
+  .then((result5) => console.log(result5));
 
 // AJAX
 const xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function () {
   if (this.readyState == 4 && this.status == 200) {
-    console.log(this.response)
+    console.log(this.response);
   }
-}
+};
 
-xhttp.open('GET','../Array Destructuring/Comma Sepration.js',true);
-xhttp.send()
+xhttp.open("GET", "../Array Destructuring/Comma Sepration.js", true);
+xhttp.send();
+
+function myMap(callback) {
+  let newArr = [];
+  for(let i = 0; i < this.length; i++){
+    newArr.push(callback(this[i]));
+  }
+  return newArr;
+}
+Array.prototype.myMap = myMap;
