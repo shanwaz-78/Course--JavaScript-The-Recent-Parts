@@ -4,4 +4,5 @@ function day({ // i made a function with object parameters;
 }){
     console.log(num + ":" + name)
 }
+
 day({name : 'kyle',num : 2}) // if it's both values are undefind then he will be use default name and num values;
